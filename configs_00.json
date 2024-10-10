@@ -1,0 +1,109 @@
+[
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["MUTAG", "NCI1", "ENZYMES", "MSRC_21", "IMDB-MULTI"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "classify": [false],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["MUTAG"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 4, 8, 10, 20],
+            "dynamic_temp": [false],
+            "temp_mixture": [0.1, 0.5, 1, 2],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["MUTAG", "NCI1", "ENZYMES"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 4, 8, 10, 20],
+            "dynamic_temp": [false],
+            "temp_mixture": [0.1, 0.5, 1, 2],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["MSRC_21"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 4, 8, 10, 20, 30, 40],
+            "dynamic_temp": [false],
+            "temp_mixture": [0.1, 0.5, 1, 2],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["IMDB-MULTI"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 3, 4, 6, 8, 10, 20],
+            "dynamic_temp": [false],
+            "temp_mixture": [0.1, 0.5, 1, 2],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["MUTAG", "NCI1", "ENZYMES"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 4, 8, 10, 20],
+            "dynamic_temp": [true],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["MSRC_21"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 4, 8, 10, 20, 30, 40],
+            "dynamic_temp": [true],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    },
+    {
+        "project": "lvae",
+        "group": "ripper346phd",
+        "grid": {
+            "dataset": ["IMDB-MULTI"],
+            "hidden": [16, 32, 64, 128],
+            "dropout": [0, 0.1],
+            "mixtures": [2, 3, 4, 6, 8, 10, 20],
+            "dynamic_temp": [true],
+            "folds": [10],
+            "fold": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+    }
+]

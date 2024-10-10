@@ -1,0 +1,17 @@
+services:
+  python:
+    image: ripper346/mvgae:cuda
+    volumes:
+      - ./:/script
+    working_dir: /script
+    environment:
+      - TZ=UTC
+      - WANDB_API_KEY=your_wandb_api_key
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: [ "0" ]
+              capabilities: [ gpu ]
